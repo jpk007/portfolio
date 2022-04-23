@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(181 174 174);
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif4;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 60px;
+  transition: all .5s ease;
+}
+
+/* hover */
+
+.navbar ul li a:hover {
+  font-size: 2rem;
+}
+
+/* home div */
+
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
+#home ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('.img/profile.jpeg') no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+}
