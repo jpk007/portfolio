@@ -1,26 +1,26 @@
 /* @media (min-width: 576px) {
-  .container {
+  .main-container {
     max-width: 540px;
   }
-}
+} */
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
+@media (min-width: 800px) {
+  .main-container {
+    max-width: 576px;
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
+@media (min-width: 800px) {
+  .main-container {
+    max-width: 1140px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .main-container {
     max-width: 1140px;
   }
-} */
+}
 
 * {
   margin: 0;
@@ -28,47 +28,40 @@
   box-sizing: border-box;
 }
 
-/* navbar */
-
-.navbar {
+.main-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(46 45 45);
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  flex-direction: column;
+  width: 100%;
 }
 
+.head-section {
+  height: 10vh;
+  background-color: #ebebdc;
+}
+
+.body-section {
+  height: 90vh;
+  overflow: auto;
+}
+
+/* navbar */
 .navbar ul {
   display: flex;
+  justify-content: space-around;
   list-style: none;
   margin: 20px 0px;
 }
 
-.navbar ul li {
-  display: flex;
+.navbar ul li a {
+  text-decoration: none;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif4;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-.navbar ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 60px;
-  transition: all .5s ease;
-}
+/* end */
 
-/* hover */
-
-.navbar ul li a:hover {
-  /* border: 1px solid red; */
-  background-color: rgb(78, 20, 20);
-}
-
-/* home div */
-
+/* home */
 #home {
   display: flex;
   flex-direction: column;
@@ -91,43 +84,8 @@
   opacity: .8;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 30%;
-  right:10%;
-}
-
-.headings {
-  font-family: century;
-  font-size: 3rem;
-  text-align: center;
-  margin: 40px 0px;
-}
-
-/* about */
-
-#about {
-  display:flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 20px;
-  margin-bottom: 50px;
-}
-
-#pic {
-    display:flex;
-}
-
-#pic img {
-  width:575px;
-  height:400px;
-} 
-
-#intro {
-  display: flex;
-  flex-direction: column;
-  text-align: justify
+/* end */
+img {
+  height: 650px;
+  width: 100%;
 }
