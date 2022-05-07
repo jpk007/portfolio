@@ -41,7 +41,7 @@
 
 .body-section {
   height: 90vh;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 /* navbar */
