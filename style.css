@@ -7,40 +7,23 @@ body {
     position: relative;
 }
 
-.jp-wrapper {
+#top {
     height: 100%;
+}
+
+#heading {
+    -webkit-user-select: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    text-align: center;
     width: 100%;
 }
 
-.jp-header {
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#logo {
+    font: 150px 'Italiana', sans-serif;
 }
 
-.jp-body {
-    height: calc(100% - 80px);
-    width: 100%;
-    overflow-y: scroll;
+#tagline {
+    font-size: 16px;
 }
-
-.jp-title {
-    padding-left: 2rem;
-}
-
-.jp-title .jp-user {
-    font-size: 20px;
-    font-weight: 700;
-    color: #2d2e32;
-    cursor: pointer;
-}
-
-.jp-menu {
-    display: flex;
-    gap: 2rem;
-    padding-right: 2rem;
-}
-
-.jp-menu .jp-home  {}
