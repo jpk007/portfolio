@@ -19,6 +19,15 @@ body {
     height: 100%;
 }
 
+#top img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
 #heading {
     height: 100%;
 }
