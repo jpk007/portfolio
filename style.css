@@ -70,6 +70,10 @@ section:not(#top) {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
+.c-pointer {
+    cursor: pointer !important;
+}
+
 /*!
  * Bootstrap Grid v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
