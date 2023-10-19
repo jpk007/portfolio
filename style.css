@@ -83,35 +83,27 @@ section:not(#top) {
 
 .progress-inner {
     height: inherit;
+    background-color: #d6d6d6;
+    border-radius: inherit;
 }
 
 .progress-inner.HTML {
-    background-color: red;
-    border-radius: inherit;
     width: 80%;
 }
 
 .progress-inner.CSS {
-    background-color: orange;
-    border-radius: inherit;
     width: 60%;
 }
 
 .progress-inner.JavaScript {
-    background-color: yellow;
-    border-radius: inherit;
     width: 70%;
 }
 
 .progress-inner.VUE {
-    background-color: green;
-    border-radius: inherit;
     width: 80%;
 }
 
 .progress-inner.REACT {
-    background-color: gray;
-    border-radius: inherit;
     width: 40%;
 }
 
