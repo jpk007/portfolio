@@ -9,7 +9,7 @@ trigger:
     - push
 steps:
 
-  - name: build-reddit-client
+  - name: build-portfolio
     image: docker:latest
     volumes:
       - name: dockersock
@@ -17,7 +17,7 @@ steps:
     commands:
       - docker build -t portfolio:latest .
       
-  - name: portfolio
+  - name: serve-portfolio
     image: docker:latest
     volumes:
       - name: dockersock
