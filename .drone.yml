@@ -1,0 +1,32 @@
+kind: pipeline
+type: docker
+name: serve-portfolio
+
+trigger:
+  branch:
+    - main
+  event:
+    - push
+steps:
+
+  - name: build-reddit-client
+    image: docker:latest
+    volumes:
+      - name: dockersock
+        path: /var/run/docker.sock
+    commands:
+      - docker build -t portfolio:latest .
+      
+  - name: portfolio
+    image: docker:latest
+    volumes:
+      - name: dockersock
+        path: /var/run/docker.sock
+    commands:
+      - docker stop portfolio || true
+      - docker rm portfolio || true
+      - docker run -d --name portfolio -p 6501:80 portfolio:latest
+volumes:
+  - name: dockersock
+    host:
+      path: /var/run/docker.sock
